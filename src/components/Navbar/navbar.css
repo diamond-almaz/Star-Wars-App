@@ -1,0 +1,10 @@
+.links {
+}
+.links__btn {
+    margin: 5px;
+    text-decoration: none;
+}
+
+.links__btn:hover {
+    font-weight: bold;
+}

@@ -1,0 +1,10 @@
+.planets{
+    width: 200px;
+    /*border: 2px solid black;*/
+}
+
+.itemPlanet:hover{
+    color: white;
+    cursor: pointer;
+}
+

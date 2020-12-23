@@ -10,11 +10,10 @@ import Preloader from "../Preloader/Preloader";
 class Statistics extends React.Component {
     state={
         actualResourceUrl: null,
-        actualResourceName: null,
+        actualResourceName: null
     }
     componentDidMount() {
         getRootResource()
-
     }
 
     render() {
@@ -32,13 +31,12 @@ class Statistics extends React.Component {
             )
         }
         return (
-            <>{this.state.loadingData ?
+            <>
                 <div className="statistics">
                     <h3>Root resources</h3>
                     <div>{arr}</div>
-                    <div>{this.state.actualResourceUrl && <ResouceDetails state={this.state}/>}</div>
-
-                </div> : <Preloader/>}
+                    <div><ResouceDetails state={this.state}/></div>
+                </div>
                 </>
         )
     }

@@ -5,7 +5,8 @@ import {swAPI} from "../../../api/api";
 
 class ResouceDetails extends React.Component {
     state={
-        details: {},
+        details: {}
+
 
     }
 

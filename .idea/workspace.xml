@@ -2,13 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78bba5a2-cfbe-43a8-8403-6c4e81975821" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/00e171a5f9e5ac536f0b74c8f68f2756.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/13707ea819f36e562d7b92d154c81941.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/3db5dda2713031bed62d56ac0dcfad50.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/44015030ca471ea6a9c771875576d314.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/4a187f70f950fa061817409646f362b7.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/5a0ad7b272e45b1ec4eafb79d12427c4.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/69a80ec238a439830acbfbee7d0e6a6f.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/a970781abb56f9cab62d80020074cfcd.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/b806cbe49e47985c023171999d4ddcbf.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c27e6043a21d658c5f80c0064954ac75.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/node_modules/.cache/babel-loader/c47c494bc6316ea930c576920860edb9.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Navbar/navbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Navbar/navbar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Planets/PlanetsDetails/planetsDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Planets/PlanetsDetails/planetsDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Planets/planets.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Planets/planets.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Planets/planets.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Planets/planets.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Preloader.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Preloader/Preloader.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Preloader/Preloader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/ResouceDetails/resouceDetails.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics/ResouceDetails/resouceDetails.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/statistics.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics/statistics.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Statistics/statistics.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Statistics/statistics.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,11 +59,24 @@
       <workItem from="1608702992708" duration="915000" />
       <workItem from="1608719194521" duration="237000" />
       <workItem from="1608735335439" duration="1955000" />
-      <workItem from="1608893915448" duration="3635000" />
+      <workItem from="1608893915448" duration="3845000" />
+      <workItem from="1608911950671" duration="2537000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

@@ -14,3 +14,8 @@
     /*background-color: cornflowerblue;*/
     grid-area: b;
 }
+
+
+.title{
+    font-weight: bold;
+}

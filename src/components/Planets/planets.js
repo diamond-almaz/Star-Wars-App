@@ -3,17 +3,24 @@ import {connect} from "react-redux";
 import {getListPlanets} from "../../redux/planet-reducer";
 import PlanetsDetails from "./PlanetsDetails/planetsDetails";
 import './planets.css'
+import Preloader from "../Preloader/Preloader";
 
 class Planets extends React.Component {
     state = {
         selectedPlanet: null,
+        loading: false
     }
 
     componentDidMount() {
         this.props.getListPlanets();
     }
-
-
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props!=prevProps) {
+            this.setState({
+                loading: !this.state.loading
+            })
+        }
+    }
 
 
     render() {
@@ -28,14 +35,19 @@ class Planets extends React.Component {
 
         });
 
+
+
         console.log('Прорисовка planet')
         return (<>
-                <div className="tab-pane fade show active planets" id="home" role="tabpanel" aria-labelledby="home-tab" >
+                <div className="planets">
                 <div className='list-planet'>
-                    <ul className={'"list-group"'}>
-                        <div className={'list-group-item list-group-item-action active title'}>Planets</div>
+                    {
+                        this.state.loading ? <ul className={'"list-group"'}>
+                            <div className={'list-group-item list-group-item-action active title'}>Planets</div>
 
-                        {listPlanets}</ul>
+                            {listPlanets}</ul> : <Preloader/>
+                    }
+
                 </div>
                 <div className='planets-details'>
                     {this.state.selectedPlanet && <PlanetsDetails planetInfo={this.state.selectedPlanet}/>}

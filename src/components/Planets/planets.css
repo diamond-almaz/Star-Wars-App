@@ -3,25 +3,20 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     /*border: 2px solid black;*/
+    padding: 20px 0 0 0;
+
 }
 
 .itemPlanet:hover{
-    color: red;
     cursor: pointer;
 }
 
 .planets-details {
-    padding: 20px 20px 0 0px;
     /*grid-column-start: 0;*/
 }
 
 .list-planet{
-    padding: 20px 0 0 0;
     /*align-items: center;*/
     color: blue;
     /*grid-column-start: 1;*/
-}
-
-.title{
-    font-weight: bold;
 }

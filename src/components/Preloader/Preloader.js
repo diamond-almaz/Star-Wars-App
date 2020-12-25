@@ -3,10 +3,10 @@ import './Preloader.css'
 
 const Preloader=()=>{
     return (
-        <div className="lds-ripple">
-            <div></div>
-            <div></div>
+        <div className="cssload-container">
+            <div className="cssload-whirlpool"></div>
         </div>
+
     )
 }
 

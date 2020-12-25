@@ -1,4 +1,10 @@
 .itemPlanet:hover{
-    color: white;
     cursor: pointer;
+}
+
+.statistics {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 20px 0 0 0;
+
 }

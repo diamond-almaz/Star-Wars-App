@@ -10,17 +10,26 @@ import Preloader from "../Preloader/Preloader";
 class Statistics extends React.Component {
     state={
         actualResourceUrl: null,
-        actualResourceName: null
+        actualResourceName: null,
+        loading: false
     }
     componentDidMount() {
         getRootResource()
+    }
+
+    componentDidUpdate(prevProps, prevState, snapshot) {
+        if (this.props!=prevProps) {
+            this.setState({
+                loading: !this.state.loading
+            })
+        }
     }
 
     render() {
         let arr=[]
         for (let i in this.props.rootResource) {
             arr.push(
-                <><div className={'itemPlanet'} onClick={
+                <><div className={'list-group-item list-group-item-action itemPlanet'} onClick={
                     ()=>{
                         this.setState({
                             actualResourceUrl: this.props.rootResource[i],
@@ -34,9 +43,14 @@ class Statistics extends React.Component {
         return (
             <>
                 <div className="statistics">
-                    <h3>Root resources</h3>
-                    <div>{arr}</div>
-                    <div>{this.state.actualResourceUrl!=null && <ResouceDetails state={this.state}/>}</div>
+                    {this.state.loading?
+                        <ul className={'"list-group"'}>
+                            <div className={'list-group-item list-group-item-action active title'} >Root resources</div>
+                            {arr}
+                        </ul>
+                        :<Preloader/>}
+
+                    <div className={'root-details'}>{this.state.actualResourceUrl!=null && <ResouceDetails state={this.state}/>}</div>
                 </div>
                 </>
         )

@@ -5,6 +5,6 @@
 .statistics {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 20px 0 0 0;
+    padding: 20px 35px 0 0;
 
 }

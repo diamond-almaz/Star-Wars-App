@@ -13,22 +13,20 @@ class PlanetsDetails extends React.Component {
         console.log('Прорисовка planetDetails')
 
         return (
-            <div>
-                <h3>{name}</h3>
-                <div>Climate: {climate}</div>
-                <div>Created: {created}</div>
-                <div>Diameter: {diameter}</div>
-                <div>Edited: {edited}</div>
-                {/*<div>Films: {films}</div>*/}
-                <div>Gravity: {gravity}</div>
-                <div>Orbital period: {orbital_period}</div>
-                <div>population: {population}</div>
-                {/*<div>Residents: {residents}</div>*/}
-                <div>Rotation_period: {rotation_period}</div>
-                <div>Surface_water: {surface_water}</div>
-                <div>Terrain: {terrain}</div>
-                <div>population: {population}</div>
-            </div>
+
+                <ul className="list-group-flush">
+                    <li className="list-group-item active title" aria-current="true">{name}</li>
+                    <li className="list-group-item">Climate: {climate}</li>
+                    <li className="list-group-item">Created: {created}</li>
+                    <li className="list-group-item">Diameter: {diameter}</li>
+                    <li className="list-group-item">Edited: {edited}</li>
+                    <li className="list-group-item">Gravity: {gravity}</li>
+                    <li className="list-group-item">Orbital period: {orbital_period}</li>
+                    <li className="list-group-item">population: {population}</li>
+                    <li className="list-group-item">Rotation_period: {rotation_period}</li>
+                    <li className="list-group-item">Surface_water: {surface_water}</li>
+                    <li className="list-group-item">Terrain: {terrain}</li>
+                </ul>
         )
     }
 }

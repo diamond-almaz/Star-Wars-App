@@ -30,10 +30,10 @@ class Planets extends React.Component {
 
         console.log('Прорисовка planet')
         return (<>
-                <div className="planets">
+                <div className="tab-pane fade show active planets" id="home" role="tabpanel" aria-labelledby="home-tab" >
                 <div className='list-planet'>
                     <ul className={'"list-group"'}>
-                        <div className={'list-group-item list-group-item-action active'}>Planets</div>
+                        <div className={'list-group-item list-group-item-action active title'}>Planets</div>
 
                         {listPlanets}</ul>
                 </div>

@@ -1,7 +1,7 @@
 .planets{
     /*width: 200px;*/
     display: grid;
-    grid-template-columns: 2fr 10fr;
+    grid-template-columns: 1fr 2fr;
     /*border: 2px solid black;*/
 }
 
@@ -11,16 +11,17 @@
 }
 
 .planets-details {
-    padding: 0 0 0 100px;
-    grid-column-start: -2;
+    padding: 20px 20px 0 0px;
+    /*grid-column-start: 0;*/
 }
 
 .list-planet{
-    align-items: center;
+    padding: 20px 0 0 0;
+    /*align-items: center;*/
     color: blue;
-    grid-column-start: 1;
+    /*grid-column-start: 1;*/
 }
 
-.active{
+.title{
     font-weight: bold;
 }

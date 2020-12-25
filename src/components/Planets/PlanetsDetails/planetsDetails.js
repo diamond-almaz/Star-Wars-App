@@ -10,6 +10,8 @@ class PlanetsDetails extends React.Component {
             orbital_period, population,residents,
             rotation_period, surface_water, terrain,
         } = this.props.planetInfo
+        console.log('Прорисовка planetDetails')
+
         return (
             <div>
                 <h3>{name}</h3>

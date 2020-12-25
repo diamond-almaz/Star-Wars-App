@@ -31,7 +31,7 @@ export const getDetailPlanetAC=(body)=>({type:GET_DETAIL_PLANET,body})
 
 export const getListPlanets=()=>(dispatch)=>{
     swAPI.getPlanets().then((response)=>{
-        console.log(response)
+        console.log('Получение списка планет и обновление')
         dispatch(getListPlanetsAC(response.data.results))
     })
 }

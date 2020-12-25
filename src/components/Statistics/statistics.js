@@ -30,12 +30,13 @@ class Statistics extends React.Component {
                 }>{i}</div></>
             )
         }
+        console.log('Прорисовка statistics')
         return (
             <>
                 <div className="statistics">
                     <h3>Root resources</h3>
                     <div>{arr}</div>
-                    <div><ResouceDetails state={this.state}/></div>
+                    <div>{this.state.actualResourceUrl!=null && <ResouceDetails state={this.state}/>}</div>
                 </div>
                 </>
         )

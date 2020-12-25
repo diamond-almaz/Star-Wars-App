@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 import './navbar.css'
 
 const Navbar=()=>{
+    console.log('Прорисовка Navbar')
     return (
         <div className="links">
             <NavLink to="/planets" className="links__btn">Planets</NavLink>

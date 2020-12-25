@@ -23,6 +23,7 @@ const getRootResourceAC=(body)=>({type:GET_ROOT_RESOURCE,body})
 
 export const getRootResource=()=>(dispatch)=>{
     swAPI.getResources().then(response=>{
+        console.log('Пришел ответ с списком ресурсов из root')
         dispatch(getRootResourceAC(response.data))
     })
 }

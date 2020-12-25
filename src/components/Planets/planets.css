@@ -1,10 +1,26 @@
 .planets{
-    width: 200px;
+    /*width: 200px;*/
+    display: grid;
+    grid-template-columns: 2fr 10fr;
     /*border: 2px solid black;*/
 }
 
 .itemPlanet:hover{
-    color: white;
+    color: red;
     cursor: pointer;
 }
 
+.planets-details {
+    padding: 0 0 0 100px;
+    grid-column-start: -2;
+}
+
+.list-planet{
+    align-items: center;
+    color: blue;
+    grid-column-start: 1;
+}
+
+.active{
+    font-weight: bold;
+}

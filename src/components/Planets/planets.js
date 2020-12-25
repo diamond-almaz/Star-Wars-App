@@ -14,25 +14,32 @@ class Planets extends React.Component {
     }
 
 
+
+
     render() {
         let listPlanets = this.props.planets.map(i => {
-            return <><div onClick={() => {
-                this.setState({
-                    selectedPlanet: i
-                })
-            }} key={i.name}>
-                <span className={'itemPlanet'}>{i.name}</span>
-            </div></>
+            return <button onClick={() => {
+                    this.setState({
+                        selectedPlanet: i
+                    })
+                }} key={i.name}
+                           type={'button'}
+                           className={'list-group-item list-group-item-action'}>{i.name}</button>
+
         });
 
-
+        console.log('Прорисовка planet')
         return (<>
                 <div className="planets">
-                    <h3>Planets</h3>
-                    <div>{listPlanets}</div>
+                <div className='list-planet'>
+                    <ul className={'"list-group"'}>
+                        <div className={'list-group-item list-group-item-action active'}>Planets</div>
+
+                        {listPlanets}</ul>
                 </div>
-                <div>
+                <div className='planets-details'>
                     {this.state.selectedPlanet && <PlanetsDetails planetInfo={this.state.selectedPlanet}/>}
+                </div>
                 </div>
             </>
         )

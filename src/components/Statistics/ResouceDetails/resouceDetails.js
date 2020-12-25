@@ -11,6 +11,7 @@ class ResouceDetails extends React.Component {
     }
 
     componentDidMount() {
+        console.log('componentDidMount из statisticsDetails')
         swAPI.getResourceDetails(this.props.state.actualResourceUrl)
             .then(resp=>{
             this.setState({
@@ -20,8 +21,10 @@ class ResouceDetails extends React.Component {
     }
 
     componentDidUpdate(prevProps, prevState, snapshot) {
+
         if (prevProps!=this.props)
         {
+            console.log('componentDidUpdate из statisticsDetails')
             swAPI.getResourceDetails(this.props.state.actualResourceUrl).then(resp=>{
                 this.setState({
                     details: this.props.state.actualResourceName=='films'?resp.data.results.map(i=>i.title):resp.data.results.map(i=>i.name)
@@ -39,6 +42,7 @@ class ResouceDetails extends React.Component {
             })
         }
 
+        console.log('Прорисовка statisticsDetails')
 
         return (<>
             <h3>{this.props.state.actualResourceName}</h3>

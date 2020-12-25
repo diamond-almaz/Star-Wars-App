@@ -6,11 +6,11 @@
 }
 
 .app-wrapper__buttons {
-    background-color: aqua;
+    /*background-color: aqua;*/
     grid-area: a;
 }
 
 .app-wrapper__content {
-    background-color: cornflowerblue;
+    /*background-color: cornflowerblue;*/
     grid-area: b;
 }

@@ -9,3 +9,7 @@
 .links__btn:hover {
     font-weight: bold;
 }
+
+.links__btn.active {
+    color: red;
+}
